@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/static/infineon-logo.png">
+    <title>IFX Innovation Gallery 2023</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <div class="outer dark">
+          <div class="title-container">
+            <div class="dot red"></div>
+            <div class="dot amber"></div>
+            <div class="dot green"></div>
+            <div class="title-content"> <img src="/static/infineon-logo.png" alt="logo" width="70" height="30"> IFX Innovation Gallery 2023 </div>
+          </div>
+        </div>
+        
+        <audio id="fireworkSounds" preload="auto" loop="true">
+          <source src="sound/fireworks-10s.mp3" type="audio/mp3">
+        </audio>              
+        
+        <section class="label-box">
+          <section class="flex-container">
+            <div class="flex-child " id="flex-child--1"> _ </div>
+            <div class="flex-child" id="flex-child--2"> _ </div>
+            <div class="flex-child" id="flex-child--3"> _ </div>
+            <div class="flex-child" id="flex-child--4"> _ </div>
+          </section>
+
+          <div class="flex-margin-bottom"></div>
+  
+          <div class="scene">
+            <div class="cube">
+              <div class="cube__face cube__face--front">I</div>
+              <div class="cube__face cube__face--back">2</div>
+              <div class="cube__face cube__face--right">3</div>
+              <div class="cube__face cube__face--left">G</div>
+              <div class="cube__face cube__face--top"></div>
+              <div class="cube__face cube__face--bottom"></div>
+            </div>
+          </div>
+
+          <div class="flex-margin-bottom"></div>
+
+          <div class="current">
+            <div class="parent-grid-item">
+              
+              <div class="goal">
+                <img src="/static/light.svg" alt="light" width="75" height="75">
+                Goal: Insert the letters "IG23" using hand gestures!
+              </div>
+              <div class="grid-item-justify-left">1. Rotate the dice to the desired letter by swiping LEFT or RIGHT </div>
+              <div class="grid-item-justify-left">2. Enter the letter into the text box above: PUSH </div>
+              <div class="grid-item-justify-left">3. To delete a letter, swipe DOWN </div>
+              <!-- <div class="grid-item-justify-left">4. To reset everything, PUSH </div> -->
+            </div>
+          </div>
+  
+          <!-- <div class="current">
+            <div class="parent-grid-container">
+              <div class="parent-grid-item">
+                Goal: Enter the letters "IG23" using hand gestures!
+                <div class="grid-item-justify-left">1. Swipe left/right to rotate the dice to the desired letter</div>
+                <div class="grid-item-justify-left">2. Swipe Up to enter the letter into the text box above</div>
+                <div class="grid-item-justify-left">3. Swipe Down to backspace</div>
+                <div class="grid-item-justify-left">4. Push to reset everything</div>
+              </div>
+              <div class="parent-grid-item">
+                Actions
+                <div class="grid-container">
+                  <div class="grid-item"> 
+                    <img class="grid-item" src="/static/lowres-INFIN_Icon_left-right_01.eps.png" alt="swipeleft" width="75" height="75"> 
+                    <img class="grid-item" src="/static/lowres-INFIN_Icon_right-left_01.eps.png" alt="swipeleft" width="75" height="75">
+                     Rotate Dice
+                  </div>
+                  <div class="grid-item"> <img class="grid-item" src="/static/lowres-INFIN_Icon_down-top_01.eps.png" alt="swipeup" width="75" height="75"> Enter Input </div>
+                  <div class="grid-item"> <img class="grid-item" src="/static/lowres-INFIN_Icon_top-down_01.eps.png" alt="swipedown" width="75" height="75"> Backspace </div>
+                  <div class="grid-item"> <img class="grid-item" src="/static/lowres-INFIN_Icon_forward_01.eps.png" alt="push" width="75" height="75"> Reset </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </section>
+        
+        <div class="modal hidden">
+          <!-- <h1>WELCOME TO IFX INNOVATION GALLERY 2023!!</h1> -->
+          <div class="modal-text"> WELCOME TO IFX INNOVATION GALLERY 2023!! </div>
+        </div>
+        <div class="overlay hidden"></div>
+  
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
